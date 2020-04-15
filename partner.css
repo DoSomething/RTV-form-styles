@@ -220,7 +220,7 @@ img#tooltip-previous_address.tooltip {
     border: 2px solid;
     font-size: 13px;
     font-weight: 500;
-    padding: 20px;
+    padding: 10px;
     background: #322baa;
     font-family: 'Montserrat',sans-serif !important;
 }
@@ -446,7 +446,7 @@ and (-webkit-device-pixel-ratio : 3) {
     img#tooltip-phone.tooltip {
         background: url(question.svg) no-repeat right center !important;
         object-position: -99999px 99999px;
-        left: 82px;
+        left: 93px;
     }
 
     img#tooltip-registrant_name.tooltip{
@@ -457,6 +457,7 @@ and (-webkit-device-pixel-ratio : 3) {
     img#tooltip-date_of_birth.tooltip{
          background: url(question.svg) no-repeat right center !important;
          object-position: -99999px 99999px; 
+         left: 160px;
     }
 
 

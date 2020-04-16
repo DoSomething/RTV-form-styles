@@ -449,19 +449,19 @@ and (-webkit-device-pixel-ratio : 3) {
         left: 93px;
     }
 
-    img#tooltip-registrant_name.tooltip{
+    img#tooltip-registrant_name.tooltip {
         background: url(question.svg) no-repeat right center !important;
         object-position: -99999px 99999px;        
     }
 
-    img#tooltip-date_of_birth.tooltip{
+    img#tooltip-date_of_birth.tooltip {
          background: url(question.svg) no-repeat right center !important;
          object-position: -99999px 99999px; 
          left: 160px;
     }
 
 
-    img#tooltip-phone.tooltip{
+    img#tooltip-phone.tooltip {
       background: url(question.svg) no-repeat right center !important;
       object-position: -99999px 99999px;
     }
@@ -513,35 +513,35 @@ and (orientation : portrait) {
         left: 81px;
     }
 
-    img#tooltip-email_address.tooltip{
+    img#tooltip-email_address.tooltip {
    background: url(question.svg) no-repeat right center !important;
    object-position: -99999px 99999px; 
    left: 174px; 
    }
 
-   img#tooltip-home_zip_code.tooltip{
+   img#tooltip-home_zip_code.tooltip {
     background: url(question.svg) no-repeat right center !important;
     object-position: -99999px 99999px; 
    }
 
-   img#tooltip-registrant_name.tooltip{
+   img#tooltip-registrant_name.tooltip {
    background: url(question.svg) no-repeat right center !important;
    object-position: -99999px 99999px;        
    }
 
-    img#tooltip-date_of_birth.tooltip{
+    img#tooltip-date_of_birth.tooltip {
          background: url(question.svg) no-repeat right center !important;
          object-position: -99999px 99999px; 
     }
 
 
-    img#tooltip-phone.tooltip{
+    img#tooltip-phone.tooltip {
       background: url(question.svg) no-repeat right center !important;
       object-position: -99999px 99999px;
       left: 90px;
     }
 
-    img#tooltip-home_address.tooltip{
+    img#tooltip-home_address.tooltip {
        background: url(question.svg) no-repeat right center !important;
        object-position: -99999px 99999px;                
     }

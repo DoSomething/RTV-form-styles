@@ -1,24 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Oswald:wght@700&display=swap');
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 21px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     background-image: none !important;
     position: relative;
-    font-weight: 700;
-}
-
-#main form ul .has_license .checkbox-explanation p {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0px 35px 20px;
-    padding: 15px;
-    height: 112px;
-    background: rgb(50, 43, 170);
-    border-radius: 0px;
 }
 
 #header .header-text {
@@ -47,8 +36,9 @@ body {
     font-size: 37px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 52px;
+    margin-bottom: 15px;
 }
+
 /** Form Error */
 form .error {
     color: #B2272C;
@@ -56,106 +46,70 @@ form .error {
     font-weight: normal;
 }
 
-/** Question Mark */
-#main form ul li > div.tooltip {
-    padding: 6px 5px;
-    float: none;
-    display: inline-block;
-    position: absolute;
-    left: -30px;
-    top: 0;
+/** Queston mark tooltips */
+/** Target the same CSS first partner.css then registration.css ******************************/
+#main form ul li>div.tooltip img, 
+#main form fieldset legend img.tooltip,
+img#tooltip-previous_name,
+img#tooltip-previous_address.tooltip {
+    background: url(question.svg) no-repeat right center !important;
+    width: 21px;
+    height: 21px;
+    padding-left: 26px;
+    left: 120px;
 }
 
-img#tooltip-email_address.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;  
-    left: 160px;   
+#main form ul li>div.tooltip img#tooltip-email_address.tooltip {
+    left: 170px;
 }
 
-img#tooltip-home_zip_code.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px; 
-    left: 169px;       
-}
-
-img#tooltip-registrant_name.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;        
-}
-
-img#tooltip-date_of_birth.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px; 
-    left: 161px;
-}
-
-img#tooltip-phone.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;
-    left: 93px;             
-}
-
-img#tooltip-home_address.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;                
+#main form fieldset legend img#tooltip-registrant_name.tooltip {
+    left: 85px;
 }
 
 img#tooltip-previous_name {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;
+    position: absolute;
+    left: 270px;
+    top: .25em;
 }
 
-img#tooltip-race.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;
-    left: 78px; 
+#main form fieldset legend img#tooltip-home_address.tooltip {
+    left: 240px;
 }
 
-img#tooltip-party.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;
-    left: 86px;
+#main form fieldset legend img#tooltip-mailing_address.tooltip {
+    left: 280px; 
 }
 
 img#tooltip-previous_address.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px;
+    left: 0;
 }
 
-/*****************************/
-.tooltip-shown {
-    background: #322baa;
-    border-radius: 7px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
+#main form ul li>div.tooltip img#tooltip-race.tooltip {
+    left: 80px;
 }
 
-/*** Move Name and address queston mark ***/
-/** Target the same CSS first partner.css then registration.css ******************************/
-
-#main #main_inner form fieldset legend img.tooltip {
-    padding: 2px 5px;
-    float: none;
-    display: inline-block;
-    position: absolute;
-    top: 1.3em;
+#main form ul li>div.tooltip img#tooltip-race.tooltip {
+    left: 80px;
 }
 
-#main form fieldset legend img.tooltip {
-    padding: 2px 5px;
-    float: none;
-    display: inline-block;
-    position: absolute;
-    left: auto;
+#main form ul li>div.tooltip img#tooltip-party {
+    left: 90px;
 }
 
-/************************************************/
+#main form ul li>div.tooltip img#tooltip-date_of_birth.tooltip {
+    left: 165px;
+}
+
+#main form ul li>div.tooltip img#tooltip-phone.tooltip {
+    left: 95px;
+}
 
 #main #main_inner #edit_registrant_19586851 ul li div.tooltip {
     color: #ff0031;
 }
 
-/*** drop down arrows*/
+/** Drop down arrows */
 #main #main_inner #other_language_link select {
     background: #fff url(down_arrow.png) no-repeat  114px center;
 }
@@ -172,6 +126,7 @@ img#tooltip-previous_address.tooltip {
 #main #main_inner form .checkbox label,
 #main #main_inner form .radio label {
     color: #202020;
+    font-weight: 500;
 }
 
 #main #main_inner form input,
@@ -179,14 +134,6 @@ img#tooltip-previous_address.tooltip {
     background-color: #fff;
     border: 1px solid #cbd5e0;
     border-radius: 5px;
-}
-
-#main #main_inner form fieldset legend {
-    color: #ff0031;
-    font-family: Oswald;
-    font-size: 37px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 #main #main_inner form button {
@@ -201,17 +148,19 @@ img#tooltip-previous_address.tooltip {
     font-family: 'Montserrat', sans-serif;
 }
 
-#main #main_inner form ul li.registrant-form__us-citizen__line h3 input {
-    font-size: 16px;
-    /* vertical-align: top; */
-    line-height: 1em;
+#main form ul li.registrant-form__us-citizen__line h3 input[type=checkbox] {
+    font-size: 12px;
+    vertical-align: sub;
 }
 
-#main #main_inner form ul li.registrant-form__us-citizen__line{
-    margin: 15px auto;
-    padding: 10px 15px;
-    float: none;
-    width: 75%;
+#main form ul li.registrant-form__change-of-name__line input[type=checkbox] {
+    font-size: 12px;
+    vertical-align: text-bottom;
+}
+
+#main #main_inner form ul li.registrant-form__us-citizen__line {
+    margin: 0;
+    padding: 0;
     border: none;
 }
 
@@ -220,7 +169,6 @@ img#tooltip-previous_address.tooltip {
     border: 2px solid;
     font-size: 13px;
     font-weight: 500;
-    padding: 10px;
     background: #322baa;
     font-family: 'Montserrat',sans-serif !important;
 }
@@ -230,6 +178,10 @@ a:link {
     text-decoration: underline;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+}
+
+.back a {
+    font-weight: 500;
 }
 
 ul.checkbox h3 {
@@ -279,7 +231,7 @@ img#__lpform_registrant_first_name_icon {
 }
 
 #main form ul li h3 {
-    color: #2f3bb2;
+    margin-bottom: 6px;
 }
 
 span .required, span.required {
@@ -290,7 +242,7 @@ span .required, span.required {
     color: black;
 }
 
-/* Replace powered by rtv logo */
+/** Replace powered by rtv logo */
 body #footer .powered-by-logo img {
     display: none;
 }
@@ -363,124 +315,28 @@ body #footer p a, body #footer p a:visited, body #footer p a:link {
     color: black;
 }
 
-/* Media query breakpoints */
+/** Media query breakpoints */
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) {
 
-    img#tooltip-previous_address {
-       background: url(question.svg) no-repeat right center !important;
-       object-position: -99999px 99999px;  
-       left: 160px;   
-    }
-
-    img#tooltip-race {
-       background: url(question.svg) no-repeat right center !important;
-       object-position: -99999px 99999px;  
-       left: 160px;  
-    }
-
-    img#tooltip-date_of_birth.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 143px;
-    }
-
     body #main .required--text {
         font-style: italic;
         font-size: 90%;
     }
-
-    img#tooltip-email_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;  
-    }
-
-   img#tooltip-home_zip_code.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px; 
-   }
-
-   img#tooltip-registrant_name.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;        
-    }
-
-    img#tooltip-date_of_birth.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px; 
-    }
-
-
-    img#tooltip-phone.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-    }
-
-    img#tooltip-home_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;                
-    }
-
-    img#tooltip-previous_name {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-    }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
     body #main .required--text {
-         display: none !important; 
+        display: none !important; 
         font-style: italic;
         font-size: 90%;
     }
-
-    img#tooltip-email_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 168px;
-   }
-
-    img#tooltip-phone.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 93px;
-    }
-
-    img#tooltip-registrant_name.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;        
-    }
-
-    img#tooltip-date_of_birth.tooltip {
-         background: url(question.svg) no-repeat right center !important;
-         object-position: -99999px 99999px; 
-         left: 160px;
-    }
-
-
-    img#tooltip-phone.tooltip {
-      background: url(question.svg) no-repeat right center !important;
-      object-position: -99999px 99999px;
-    }
-
-    img#tooltip-home_address.tooltip{
-       background: url(question.svg) no-repeat right center !important;
-       object-position: -99999px 99999px;                
-    }
-
-
-    img#tooltip-previous_name {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-    }
 }
 
-
-/* iPad breakpoints*/
-
+/** iPad breakpoints */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
@@ -488,165 +344,27 @@ and (orientation : portrait) {
 
     body.new-mobile-ui #main .dynamic-navigation {
         position:inherit;
-        top: 50px
+        top: 50px;
     }
 
     .dynamic-step li.width_b.registrant-form__first-name__line {
-        clear: both
+        clear: both;
     }
 
-    .dynamic-step li.width_b.registrant-form__first-name__line,.dynamic-step li.width_b.registrant-form__last-name__line,.dynamic-step li.width_b.registrant-form__prev-first-name__line,.dynamic-step li.width_b.registrant-form__prev-last-name__line {
-        width: 40% !important
+    .dynamic-step li.width_b.registrant-form__first-name__line,
+    .dynamic-step li.width_b.registrant-form__last-name__line,
+    .dynamic-step li.width_b.registrant-form__prev-first-name__line,
+    .dynamic-step li.width_b.registrant-form__prev-last-name__line {
+        width: 40% !important;
     }
 
-    .dynamic-step li.width_b.registrant-form__last-name__line,.dynamic-step li.width_b.registrant-form__prev-last-name__line {
-        margin-right: 0 !important
+    .dynamic-step li.width_b.registrant-form__last-name__line,
+    .dynamic-step li.width_b.registrant-form__prev-last-name__line {
+        margin-right: 0 !important;
     }
 
-    .dynamic-step li.width_c.registrant-form__middle-name__line,.dynamic-step li.width_c.registrant-form__prev-middle-name__line {
-        width: 16% !important
-    }
-
-    img#tooltip-phone.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 81px;
-    }
-
-    img#tooltip-email_address.tooltip {
-   background: url(question.svg) no-repeat right center !important;
-   object-position: -99999px 99999px; 
-   left: 174px; 
-   }
-
-   img#tooltip-home_zip_code.tooltip {
-    background: url(question.svg) no-repeat right center !important;
-    object-position: -99999px 99999px; 
-   }
-
-   img#tooltip-registrant_name.tooltip {
-   background: url(question.svg) no-repeat right center !important;
-   object-position: -99999px 99999px;        
-   }
-
-    img#tooltip-date_of_birth.tooltip {
-         background: url(question.svg) no-repeat right center !important;
-         object-position: -99999px 99999px; 
-    }
-
-
-    img#tooltip-phone.tooltip {
-      background: url(question.svg) no-repeat right center !important;
-      object-position: -99999px 99999px;
-      left: 90px;
-    }
-
-    img#tooltip-home_address.tooltip {
-       background: url(question.svg) no-repeat right center !important;
-       object-position: -99999px 99999px;                
-    }
-
-    img#tooltip-previous_name {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        margin-top: -23px;
-        left:270px;
-    }
-}
-
-
-/* Windows breakpoints*/
-
-
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-    img#tooltip-phone.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 81px;
-    }
-
-    img#tooltip-email_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 171px;
-    }
-
-    img#tooltip-home_zip_code.tooltip{
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 120px; 
-    }
-
-    img#tooltip-registrant_name.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;        
-    }
-
-    img#tooltip-date_of_birth.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px; 
-    }
-
-    img#tooltip-phone.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-        left: 90px;
-    }
-
-    img#tooltip-home_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;                
-    }
-
-    img#tooltip-previous_name {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-    }
-}
-
-/* Windows 10 and above */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .ie10up img#tooltip-phone.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
-    }
-
-    img#tooltip-email_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;  
-    }
-
-    img#tooltip-home_zip_code.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px; 
-    }
-
-    img#tooltip-registrant_name.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;        
-    }
-
-    img#tooltip-date_of_birth.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px; 
-    }
-
-    img#tooltip-phone.tooltip {
-      background: url(question.svg) no-repeat right center !important;
-      object-position: -99999px 99999px;
-    }
-
-    img#tooltip-home_address.tooltip {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;                
-    }
-
-    img#tooltip-previous_name {
-        background: url(question.svg) no-repeat right center !important;
-        object-position: -99999px 99999px;
+    .dynamic-step li.width_c.registrant-form__middle-name__line,
+    .dynamic-step li.width_c.registrant-form__prev-middle-name__line {
+        width: 16% !important;
     }
 }

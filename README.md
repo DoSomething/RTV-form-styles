@@ -18,4 +18,4 @@ It is possible to preview changes prior to submitting to approval.
 1. Click **Customize** > **White Label** > **Preview & Submission**. 
 2. Click the Preview link. **Do not click Submit for approval until you are 100% sure you are satisfied with all changes / it's been QA'ed on Browserstack.**
 
-_Note: The preview link only is active for about 15 mins. **ALSO NOTE!!!! Previewing is slightly wonky: After uploading your file, you need to log out, clear your browser cache, log back in and follow the steps above to preview your changes.** Also, after you upload your file as `partner.css` it will be referenced to on both preview and after it's approved as `partner2.css`._
+_Note: The preview link only is active for about 15 mins. **ALSO NOTE!!!! When previewing your changes, you need to hard refresh the preview page in order to ensure you are looking at the page with the most recently uploaded file.** Also, after you upload your file as `partner.css` it will be referenced to on both preview and after it's approved as `partner2.css`._

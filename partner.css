@@ -15,11 +15,17 @@ body {
 }
 
 #header.partner {
-    background-size: 75px 60px; 
+    background-size: 75px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#header #progress-bar {
+    display: block;
 }
 
 #header {
-    background-position: center center;
     background-image: url(DS_LOGO.svg) !important;
 }
 
@@ -37,6 +43,33 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 15px;
+}
+
+/** Progress Bar */
+ol li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    color: #322baa;
+    font-weight: bold;
+    border: 7px solid #322baa;
+    border-radius: 60px;
+    padding: 8px 12px;
+
+}
+
+li.progress-title {
+    display: none;
+}
+
+li.progress-current, li.progress-done {
+    color: #ffffff;
+    background-color: #ff0031;
+}
+
+li.progress-done {
+    font-size: 16px;
+    padding: 8px 10px;
 }
 
 /** Form Error */
@@ -315,18 +348,6 @@ body #footer p a, body #footer p a:visited, body #footer p a:link {
     color: black;
 }
 
-/** Media query breakpoints */
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-
-    body #main .required--text {
-        font-style: italic;
-        font-size: 90%;
-    }
-}
-
 @media (max-width: 600px) {
 
     body #main .required--text {
@@ -366,5 +387,35 @@ and (orientation : portrait) {
     .dynamic-step li.width_c.registrant-form__middle-name__line,
     .dynamic-step li.width_c.registrant-form__prev-middle-name__line {
         width: 16% !important;
+    }
+}
+
+/** Media query breakpoints */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+    body #main .required--text {
+        font-style: italic;
+        font-size: 90%;
+    }
+}
+
+/** Media query breakpoints */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px) {
+    #header {
+        background-position: center center;
+    }
+
+    #header.partner {
+        justify-content: center;
+        padding-top: 120px;
+    }
+
+    ol li {
+        margin: 10px 5px;
     }
 }

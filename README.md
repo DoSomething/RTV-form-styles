@@ -1,9 +1,9 @@
 # RTV-form-styling
-CSS styles for the Rock The Vote (RTV) form. Although the file is uploaded directly to their platform and managed there, we wanted to track changes made to this file in this repository. Additional information on how to customize styles and assets can be found [here](https://www.rockthevote.org/programs-and-partner-resources/tech-for-civic-engagement/partner-ovr-tool-faqs/partner-ovr-tool-faqs/).
+CSS styles for the Rock The Vote (RTV) form. Although the file is uploaded directly to their platform and managed there, we wanted to track changes made to this file in this repository. Ideally, this repo should be updated with the most current styles after they've been submitted on the RTV platform. Additional information on how to customize styles and assets can be found [here](https://www.rockthevote.org/programs-and-partner-resources/tech-for-civic-engagement/online-voter-registration-platform/partner-ovr-tool-faqs/).
 
 Partner form style overrides live in `partner.css` (this must be the name of the file uploaded to the partner portal). This is uploaded and submitted for approval via the RTV partner portal. 
 
-To upload the `partner.css` file, you must login:
+To upload the `partner.css` file, you must [login](https://vr.rockthevote.com/login) (credentials are in LastPass):
 
 1. Click **Customize** > **White Label** > **CSS**. 
 2. Upload your file. There is no need to check the **remove** checkbox for the `Not Approved Version` file when uploading your updated file.
